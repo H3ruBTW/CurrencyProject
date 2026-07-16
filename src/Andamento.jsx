@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import Chart from "chart.js/auto";
 import { popularCurrencies, otherCurrencies } from "./currency-library";
 import { useThemeContext } from "./ThemeContext";

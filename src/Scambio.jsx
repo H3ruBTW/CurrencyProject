@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { popularCurrencies, otherCurrencies } from "./currency-library";
 
 export const Scambio = () => {

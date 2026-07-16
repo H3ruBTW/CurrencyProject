@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Outlet, NavLink } from "react-router";
 import "./css/index.css"
 import { useThemeContext } from "./ThemeContext";
@@ -33,10 +33,10 @@ export const Root = () => {
                     <p>Buongallino Alessandro ©<br />All rights reserved.</p>
                 </div>
                 <div>
-                    <p>I dati sull'applicazione vengono aggiornati ogni giorno tramite da Frankfurter</p>
+                    <p>I dati sull'applicazione vengono aggiornati ogni giorno tramite da <a href="https://frankfurter.dev">Frankfurter</a></p>
                 </div>
                 <div>
-
+                    <a href="https://github.com/H3ruBTW">Visita il mio GitHub</a>
                 </div>
             </footer>
         </>
