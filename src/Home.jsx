@@ -1,10 +1,11 @@
 import { Link } from "react-router";
+import heroImg from "./assets/hero.jpg"
 
 export const Home = () => {
     return (
         <div>
             <div className="hero">
-                <img src="./src/assets/hero.jpg" alt="" className="hero-img" />
+                <img src={heroImg} alt="" className="hero-img" />
 
                 <div className="hero-overlay"></div>
 
