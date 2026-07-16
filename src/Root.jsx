@@ -10,7 +10,7 @@ export const Root = () => {
         <>
             <header>
                 <div className="header-container">
-                    <h1>Currency Monitor</h1>
+                    <h1 className="title">Currency Monitor</h1>
                     <button className="theme-button" 
                         title={(theme === "light") ? "Passa al tema scuro" : "Passa al tema chiaro"} 
                         onClick={changeTheme}
@@ -29,7 +29,15 @@ export const Root = () => {
                 <Outlet />
             </main>
             <footer>
-                <p>Buongallino Alessandro ©<br />All rights reserved.</p>
+                <div>
+                    <p>Buongallino Alessandro ©<br />All rights reserved.</p>
+                </div>
+                <div>
+                    <p>I dati sull'applicazione vengono aggiornati ogni giorno tramite da Frankfurter</p>
+                </div>
+                <div>
+
+                </div>
             </footer>
         </>
     )
