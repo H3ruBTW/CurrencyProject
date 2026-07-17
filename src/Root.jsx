@@ -30,13 +30,13 @@ export const Root = () => {
             </main>
             <footer>
                 <div>
-                    <p>Buongallino Alessandro ©<br />All rights reserved.</p>
+                    <p>Progetto React UFS09<br />Buongallino Alessandro ©<br />All rights reserved.</p>
                 </div>
                 <div>
-                    <p>I dati sull'applicazione vengono aggiornati ogni giorno tramite da Frankfurter</p>
+                    <p>I dati sull'applicazione vengono aggiornati ogni giorno tramite <a href="https://frankfurter.dev/">Frankfurter</a></p>
                 </div>
                 <div>
-
+                    <a href="https://github.com/H3ruBTW">Guarda il mio GitHub</a>
                 </div>
             </footer>
         </>

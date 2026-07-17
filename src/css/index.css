@@ -199,6 +199,17 @@ footer {
     justify-content: space-around;
 }
 
+footer div {
+    display: flex;
+    padding: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div a {
+    color: var(--text);
+}
+
 @media (max-width: 768px){
     footer {
         flex-direction: column;
