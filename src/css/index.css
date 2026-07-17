@@ -196,7 +196,7 @@ footer {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 footer div {
@@ -213,6 +213,11 @@ footer div a {
 @media (max-width: 768px){
     footer {
         flex-direction: column;
+    }
+
+    footer div {
+        border-bottom: 1px solid var(--primary);
+        padding: 10px
     }
 }
 
@@ -253,6 +258,7 @@ footer div a {
 .hero-content {
     position: relative;
     z-index: 2;
+    max-width: 760px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -321,6 +327,52 @@ footer div a {
     transform: translateY(-2px);
 }
 
+/* --- Features --- */
+
+.features {
+    padding: 48px 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 2rem;
+    color: var(--text);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.feature-card {
+    min-height: 170px;
+    padding: 22px;
+    border-radius: 18px;
+    background-color: var(--surface);
+    color: var(--text);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+    transition: 0.2s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+}
+
+.feature-card h3 {
+    margin: 0 0 12px 0;
+    font-size: 1.2rem;
+}
+
+.feature-card p {
+    margin: 0;
+    line-height: 1.5;
+}
+
 @media (max-width: 768px) {
     .hero {
         min-height: 460px;
@@ -342,8 +394,26 @@ footer div a {
         width: 100%;
         min-width: 0;
     }
+
+    .features {
+        padding: 40px 18px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }
 
+footer a {
+    color: var(--text);
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Misto */
 .label {

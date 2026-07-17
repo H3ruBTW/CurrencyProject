@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Outlet, NavLink } from "react-router";
 import "./css/index.css"
 import { useThemeContext } from "./ThemeContext";
@@ -36,7 +36,7 @@ export const Root = () => {
                     <p>I dati sull'applicazione vengono aggiornati ogni giorno tramite <a href="https://frankfurter.dev/">Frankfurter</a></p>
                 </div>
                 <div>
-                    <a href="https://github.com/H3ruBTW">Guarda il mio GitHub</a>
+
                 </div>
             </footer>
         </>
