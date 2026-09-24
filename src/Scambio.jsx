@@ -185,7 +185,7 @@ export const Scambio = () => {
     const handleStartChange = (e) => {
         let value = e.target.value;
 
-        value = value.replace(/,/g, ".");
+        value = value.replaceAll(',', ".");
         value = value.replace(/[^0-9.]/g, "");
 
         const parts = value.split(".");
@@ -399,9 +399,9 @@ export const Scambio = () => {
                         <p>{trends.ieri.value}</p>
                         <p
                             className={
-                                parseFloat(trends.ieri.trend) > 0
+                                Number.parseFloat(trends.ieri.trend) > 0
                                     ? "up"
-                                    : parseFloat(trends.ieri.trend) < 0
+                                    : Number.parseFloat(trends.ieri.trend) < 0
                                     ? "down"
                                     : "noChange"
                             }
@@ -415,9 +415,9 @@ export const Scambio = () => {
                         <p>{trends.gg.value}</p>
                         <p
                             className={
-                                parseFloat(trends.gg.trend) > 0
+                                Number.parseFloat(trends.gg.trend) > 0
                                     ? "up"
-                                    : parseFloat(trends.gg.trend) < 0
+                                    : Number.parseFloat(trends.gg.trend) < 0
                                     ? "down"
                                     : "noChange"
                             }
@@ -431,9 +431,9 @@ export const Scambio = () => {
                         <p>{trends.s.value}</p>
                         <p
                             className={
-                                parseFloat(trends.s.trend) > 0
+                                Number.parseFloat(trends.s.trend) > 0
                                     ? "up"
-                                    : parseFloat(trends.s.trend) < 0
+                                    : Number.parseFloat(trends.s.trend) < 0
                                     ? "down"
                                     : "noChange"
                             }
@@ -447,9 +447,9 @@ export const Scambio = () => {
                         <p>{trends.m.value}</p>
                         <p
                             className={
-                                parseFloat(trends.m.trend) > 0
+                                Number.parseFloat(trends.m.trend) > 0
                                     ? "up"
-                                    : parseFloat(trends.m.trend) < 0
+                                    : Number.parseFloat(trends.m.trend) < 0
                                     ? "down"
                                     : "noChange"
                             }

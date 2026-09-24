@@ -31,7 +31,7 @@ export const Andamento = () => {
         });
 
         const primoValore = dataset[0];
-        const ultimoValore = dataset[dataset.length - 1];
+        const ultimoValore = dataset.at(- 1);
 
         if (primoValore !== undefined && ultimoValore !== undefined) {
             const differenza = ultimoValore - primoValore;
